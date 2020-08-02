@@ -45,6 +45,7 @@ function samplecity (city) {
 //run the function for search bar
 document.getElementById('search').addEventListener('click', event => {
     event.preventDefault()
+    document.getElementById('fiveday').innerHTML=""
     let city = document.getElementById('city').value
     samplecity(city)
     document.getElementById('city').value=''
