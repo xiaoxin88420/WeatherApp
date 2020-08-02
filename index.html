@@ -16,25 +16,35 @@
         <h1>Weather Dashboard</h1>
     </header>
 
-    <nav>
-        <!-- <nav class="navbar navbar-light bg-light"> -->
-            <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+    <div>
+        <nav id="leftnavbar" class="col-3">
+            <!-- <nav class="navbar navbar-light bg-light"> -->
+                <form class="form-inline">
+                    <label for="city">Search for a City</label>
+                    <input class="form-control mr-sm-2" type="search" name='city' id='city' placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id='search'>Search</button>
+                </form>
 
-            <ul class="list-group">
-                <li class="list-group-item active">Los Angeles</li>
-                <li class="list-group-item">Irvine</li>
-                <li class="list-group-item">San Diego</li>
-                <li class="list-group-item">Seattle</li>
-                <li class="list-group-item">Orlando</li>
-            </ul>
+                <ul class="list-group">
+                    <li class="list-group-item">Los Angeles</li>
+                    <li class="list-group-item">Irvine</li>
+                    <li class="list-group-item">San Diego</li>
+                    <li class="list-group-item">Seattle</li>
+                    <li class="list-group-item">Orlando</li>
+                </ul>
 
 
-        <!-- </nav> -->
-    </nav>
+            <!-- </nav> -->
+        </nav>
 
+        <main id='main' class="col-9">
+            <div id='today'></div>
+            <div id='fiveday'>
+                <p>5-Day Forecast:</p>
+
+            </div>
+        </main>
+    </div>
 
 
 
