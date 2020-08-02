@@ -16,36 +16,37 @@
         <h1>Weather Dashboard</h1>
     </header>
 
-    <div>
-        <nav id="leftnavbar" class="col-3">
-            <!-- <nav class="navbar navbar-light bg-light"> -->
-                <form class="form-inline">
-                    <label for="city">Search for a City</label>
-                    <input class="form-control mr-sm-2" type="search" name='city' id='city' placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id='search'>Search</button>
-                </form>
+    <div class='container-fluid'>
+        <div class='row'>
+            <nav id="leftnavbar" class="col-4">
 
-                <ul class="list-group">
-                    <li class="list-group-item">Los Angeles</li>
-                    <li class="list-group-item">Irvine</li>
-                    <li class="list-group-item">San Diego</li>
-                    <li class="list-group-item">Seattle</li>
-                    <li class="list-group-item">Orlando</li>
-                </ul>
+                    <form class="form-inline">
+                        <label for="city">Search for a City</label><br>
+                        <input class="form-control mr-sm-2" type="search" name='city' id='city' placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id='search'>Search</button>
+                    </form>
 
+                    <ul class="list-group">
+                        <li id='losangeles' class="list-group-item">Los Angeles</li>
+                        <li id='irvine' class="list-group-item">Irvine</li>
+                        <li id='sandiego' class="list-group-item">San Diego</li>
+                        <li id='seattle' class="list-group-item">Seattle</li>
+                        <li id='orlando' class="list-group-item">Orlando</li>
+                    </ul>
 
-            <!-- </nav> -->
-        </nav>
+            </nav>
 
-        <main id='main' class="col-9">
-            <div id='today'></div>
-            <div id='fiveday'>
-                <p>5-Day Forecast:</p>
-
-            </div>
-        </main>
+            <div id='today' class="col-8"></div>
+        </div>
     </div>
 
+    <div id='fivetitle' class="alert alert-primary" role="alert">
+        5-Day Forecast
+    </div>
+
+    <div>
+        <section id='fiveday'></section>
+    </div>
 
 
 
