@@ -53,6 +53,7 @@ document.getElementById('search').addEventListener('click', event => {
 
 //run the function for sample cities
 document.addEventListener('click', event =>{
+    event.preventDefault()
     if (event.target.classList.contains('list-group-item')) {
         let city = event.target.textContent
 
@@ -63,12 +64,12 @@ document.addEventListener('click', event =>{
 })  
 
 //change style by click on the sample cities
-document.addEventListener('mousemove', event =>{
+// document.addEventListener('mouseover', event =>{
     
-    if (event.target.classList.contains('list-group-item')){
-        event.target.classList.toggle('active')
-        setTimeout(()=>{
-            event.target.classList.remove('active')
-        },300)
-    }
-})
+//     if (event.target.classList.contains('list-group-item')){
+//         event.target.classList.toggle('active')
+//         // setTimeout(()=>{
+//         //     event.target.classList.remove('active')
+//         // },300)
+//     }
+// })
